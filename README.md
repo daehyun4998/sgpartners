@@ -1,7 +1,3 @@
-# SG인증파트너스 홈페이지 v4 최종본
+# SG인증파트너스 홈페이지
 
-GitHub Pages 업로드용 파일입니다.
-- index.html
-- style.css
-- script.js
-- logo.png
+GitHub Pages용 정적 홈페이지입니다. 저장소 루트에 전체 파일을 업로드하세요.
