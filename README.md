@@ -1,14 +1,14 @@
 # SG인증파트너스 홈페이지
 
-GitHub Pages용 정적 홈페이지입니다.
+현재 GitHub Pages 배포용 홈페이지입니다.
 
-## 업로드 구조
-- index.html
-- privacy.html
-- assets/
-  - style.css
-  - script.js
-  - sg-logo.webp
-  - representative.webp
+## 기준 파일
+- `index.html`
+- `privacy.html`
+- `assets/style.css`
+- `assets/script.js`
+- `assets/sg-logo-original.png` — 원본 SG 로고
+- `assets/representative-original.png` — 대표 사진
+- `homepage-qr.png`
 
-저장소 루트에 위 파일과 폴더가 바로 보이도록 업로드하세요.
+루트의 중복 CSS/JS/로고 파일은 제거하여 파일 참조가 섞이지 않도록 정리했습니다.
