@@ -177,19 +177,106 @@
       </div>
     </section>
 
+    
     <section id="roadmap" class="section roadmap-section">
-      <div class="container roadmap-layout">
-        <div class="section-heading light reveal">
+      <style>
+        .sg-roadmap-v7-wrap{
+          display:grid;
+          grid-template-columns:360px minmax(0,1fr);
+          gap:48px;
+          align-items:start;
+        }
+        .sg-roadmap-v7-intro{max-width:360px}
+        .sg-roadmap-v7-intro .eyebrow{margin-bottom:20px}
+        .sg-roadmap-v7-intro h2{
+          margin:0;
+          color:#fff;
+          font-size:clamp(36px,3.1vw,48px);
+          line-height:1.28;
+          letter-spacing:-.04em;
+          word-break:keep-all;
+        }
+        .sg-roadmap-v7-intro p:last-child{
+          margin-top:22px;
+          color:#c8d3df;
+          word-break:keep-all;
+        }
+        .sg-roadmap-v7-cards{
+          display:grid;
+          grid-template-columns:repeat(4,minmax(0,1fr));
+          gap:18px;
+          width:100%;
+        }
+        .sg-roadmap-v7-card{
+          position:relative;
+          display:flex;
+          flex-direction:column;
+          min-width:0;
+          min-height:170px;
+          padding:26px 22px;
+          border:1px solid rgba(255,255,255,.16);
+          border-radius:16px;
+          background:rgba(255,255,255,.07);
+        }
+        .sg-roadmap-v7-card b{
+          color:#e3b757;
+          font-size:12px;
+        }
+        .sg-roadmap-v7-card strong{
+          margin:14px 0 7px;
+          color:#fff;
+          font-size:20px;
+          word-break:keep-all;
+        }
+        .sg-roadmap-v7-card span{
+          color:#c7d2df;
+          font-size:14px;
+          word-break:keep-all;
+        }
+        .sg-roadmap-v7-card:not(:last-child)::after{
+          content:"→";
+          position:absolute;
+          right:-16px;
+          top:50%;
+          transform:translate(50%,-50%);
+          color:#e3b757;
+          font-size:24px;
+          font-weight:700;
+          z-index:2;
+        }
+        @media (max-width:1100px){
+          .sg-roadmap-v7-wrap{grid-template-columns:1fr;gap:34px}
+          .sg-roadmap-v7-intro{max-width:760px}
+          .sg-roadmap-v7-intro h2 br{display:none}
+          .sg-roadmap-v7-cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+          .sg-roadmap-v7-card:nth-child(2)::after{display:none}
+        }
+        @media (max-width:720px){
+          .sg-roadmap-v7-cards{grid-template-columns:1fr;gap:14px}
+          .sg-roadmap-v7-card{min-height:140px}
+          .sg-roadmap-v7-card:not(:last-child)::after{
+            content:"↓";
+            right:auto;
+            left:50%;
+            top:auto;
+            bottom:-17px;
+            transform:translate(-50%,50%);
+          }
+        }
+      </style>
+
+      <div class="container sg-roadmap-v7-wrap">
+        <div class="sg-roadmap-v7-intro reveal">
           <p class="eyebrow">GROWTH ROADMAP</p>
           <h2>지금 필요한 업무부터<br>다음 단계까지 연결합니다.</h2>
           <p>모든 기업이 같은 순서로 진행하는 것은 아닙니다. 기업 상황에 따라 필요한 단계만 선택해 설계합니다.</p>
         </div>
 
-        <div class="roadmap-cards reveal" aria-label="성장 로드맵 4단계">
-          <div class="roadmap-step"><b>STEP 01</b><strong>현황 진단</strong><span>업종 · 인력 · 보유자료 확인</span></div>
-          <div class="roadmap-step"><b>STEP 02</b><strong>가능성 검토</strong><span>요건 및 준비 항목 정리</span></div>
-          <div class="roadmap-step"><b>STEP 03</b><strong>실행 관리</strong><span>서류 준비와 신청 진행</span></div>
-          <div class="roadmap-step"><b>STEP 04</b><strong>사후관리</strong><span>인증 유지와 다음 단계 연계</span></div>
+        <div class="sg-roadmap-v7-cards reveal" aria-label="성장 로드맵 4단계">
+          <div class="sg-roadmap-v7-card"><b>STEP 01</b><strong>현황 진단</strong><span>업종 · 인력 · 보유자료 확인</span></div>
+          <div class="sg-roadmap-v7-card"><b>STEP 02</b><strong>가능성 검토</strong><span>요건 및 준비 항목 정리</span></div>
+          <div class="sg-roadmap-v7-card"><b>STEP 03</b><strong>실행 관리</strong><span>서류 준비와 신청 진행</span></div>
+          <div class="sg-roadmap-v7-card"><b>STEP 04</b><strong>사후관리</strong><span>인증 유지와 다음 단계 연계</span></div>
         </div>
       </div>
     </section>
