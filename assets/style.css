@@ -315,3 +315,45 @@ a{color:inherit}
   .contact-card{padding:32px 22px}
   .floating-call{right:16px;bottom:16px;width:52px;height:52px}
 }
+
+
+/* ===== Hero height compact adjustment only ===== */
+@media (min-width:1101px){
+  .hero-inner{
+    padding-top:58px;
+    padding-bottom:52px;
+  }
+  .hero h1{
+    font-size:clamp(46px,4.6vw,68px);
+  }
+  .hero-description{
+    margin-top:20px;
+  }
+  .hero-actions{
+    margin-top:25px;
+  }
+  .hero-points{
+    margin-top:25px;
+    padding-top:18px;
+  }
+  .hero-roadmap-card{
+    padding:24px 28px;
+  }
+  .hero-roadmap-card h2{
+    margin-bottom:18px;
+  }
+  .hero-roadmap-card ol{
+    gap:9px;
+  }
+  .hero-roadmap-card li{
+    padding:11px 14px;
+  }
+  .card-footer{
+    margin-top:16px;
+    padding-top:15px;
+  }
+  .category-grid>div{
+    padding-top:17px;
+    padding-bottom:17px;
+  }
+}
