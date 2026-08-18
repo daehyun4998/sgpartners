@@ -375,3 +375,84 @@ a{color:inherit}
     max-width:500px;
   }
 }
+
+
+/* ===== Growth Roadmap layout fix only ===== */
+@media (min-width:1101px){
+  .roadmap-layout{
+    grid-template-columns:minmax(300px,.58fr) minmax(0,1.42fr);
+    gap:54px;
+    align-items:start;
+  }
+  .roadmap-flow{
+    display:grid;
+    grid-template-columns:
+      minmax(0,1fr) 28px
+      minmax(0,1fr) 28px
+      minmax(0,1fr) 28px
+      minmax(0,1fr);
+    gap:12px;
+    align-items:center;
+  }
+  .roadmap-flow div{
+    width:auto;
+    min-width:0;
+    min-height:150px;
+    margin:0 !important;
+    padding:22px 20px;
+  }
+  .roadmap-flow i{
+    width:28px;
+    min-width:28px;
+    display:grid;
+    place-items:center;
+    transform:none;
+  }
+  .roadmap-flow strong,
+  .roadmap-flow span{
+    word-break:keep-all;
+    overflow-wrap:normal;
+  }
+}
+
+@media (min-width:721px) and (max-width:1100px){
+  .roadmap-flow{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) 28px minmax(0,1fr);
+    gap:16px 12px;
+    align-items:center;
+  }
+  .roadmap-flow div{
+    margin:0 !important;
+    width:auto;
+    min-width:0;
+  }
+  .roadmap-flow i{
+    display:grid;
+    place-items:center;
+    transform:none;
+  }
+  .roadmap-flow i:nth-of-type(2){
+    grid-column:1 / -1;
+    transform:rotate(90deg);
+    justify-self:center;
+  }
+}
+
+@media (max-width:720px){
+  .roadmap-flow{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:12px;
+  }
+  .roadmap-flow div{
+    width:100%;
+    min-width:0;
+    margin:0 !important;
+  }
+  .roadmap-flow i{
+    display:grid;
+    place-items:center;
+    transform:rotate(90deg);
+  }
+}
